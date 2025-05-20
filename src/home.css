@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Page Layout */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Content Section */
+.content {
+    flex-grow: 1; /* Pushes footer to bottom */
+    padding: 20px;
+}
+
+/* Beautiful Grid Layout for Items */
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto-responsive grid */
+    gap: 25px;
+    padding: 40px;
+    justify-items: center; /* Center align grid items */
+}
+
+/* Elegant Item Cards */
+.item-card {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #007bff; /* Subtle blue border */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-color: #0056b3;
+}
+
+/* Item Image Styling */
+.item-image {
+    width: 100%; /* Makes the image cover full width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds smooth edges */
+    object-fit: cover; /* Ensures the image covers the space properly */
+}
+
+/* Hover Zoom on Image */
+.item-card:hover .item-image {
+    transform: scale(1.1);
+}
+
+/* Item Name */
+.item-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Item Description */
+.item-description {
+    font-size: 15px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Item Price */
+.item-price {
+    font-size: 18px;
+    color: #009688;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
